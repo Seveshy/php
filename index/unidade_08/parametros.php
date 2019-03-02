@@ -4,13 +4,18 @@
         <meta charset="UTF-8">
         <title>Curso PHP FUNDAMENTAL</title>
     </head>
+
+    <body>
         <?php
 
-        $ts = strtotime("now");
-        
-        echo date("1, d/m/Y", $ts);
+        function ola($texto = "mundo"){
+            return "Olá mundo";
+        }
+
+        echo ola();
+
         ?>
-    
-    <body>
+     
+
     </body>
 </html>

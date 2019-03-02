@@ -1,5 +1,18 @@
-<?php require_once("../../conexao/conexao.php"); ?>
+<?php require_once("conexao.php"); ?>
 
+
+<?php 
+
+    // Consulta ao banco de dados
+
+    $produtos =  "SELECT produtoID, nomeproduto, tempoentrega, precounitario, imagempequena ";
+    $produtos .= "FROM produtos ";
+    $resultado = mysqli_query($conecta, $produtos);
+        if(!$resultado) {
+            die("Falha na consulta ao banco");
+        }
+
+?>
 <!doctype html>
 <html>
     <head>
@@ -11,22 +24,16 @@
     </head>
 
     <body>
-        <header>
-            <div id="header_central">
-                <img src="assets/logo_andes.gif">
-                <img src="assets/text_bnwcoffee.gif">
-            </div>
-        </header>
+
+        <?php include_once("_incluir/header.php"); ?>
         
         <main>  
             
         </main>
 
-        <footer>
-            <div id="footer_central">
-                <p>ANDES &eacute; uma empresa fict&iacute;cia, usada para o curso PHP Integra&ccedil;&atilde;o com MySQL.</p>
-            </div>
-        </footer>
+        <?php include_once("_incluir/footer.php"); ?>
+
+
     </body>
 </html>
 
