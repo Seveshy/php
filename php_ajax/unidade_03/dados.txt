@@ -1,0 +1,14 @@
+Curso PHP com AJAX/JQuery
+
+Principais funções do JQuery    
+
+Acessar e manipular o DOM
+Adicionar efeitos visuais e animações
+Alterar o conteúdo de uma página
+Alterar a apresentação de uma página
+Buscar informações no servidor sem recarregar a página
+
+Como usar a biblioteca JQuery
+
+Usar uma versão remota (CDN)
+Baixar a biblioteca JQuery
