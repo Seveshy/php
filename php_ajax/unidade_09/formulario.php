@@ -1,6 +1,10 @@
 <?php
     // Criar objeto de conexao
+<<<<<<< HEAD
     $conecta = mysqli_connect("localhost","root","123","andes");
+=======
+    $conecta = mysqli_connect("localhost","root","123456","andes");
+>>>>>>> 1bcaac77a5b9f6e15d93ecd95d52246cfdb3e4fe
     if ( mysqli_connect_errno()  ) {
         die("Conexao falhou: " . mysqli_connect_errno());
     }
@@ -96,7 +100,29 @@
             });
             
             function alterarFormulario(dados) {
+<<<<<<< HEAD
 
+=======
+                $.ajax({
+                    type:"POST"; 
+                    data:dados.serialize(),
+                    url:"alterar_transportadora.php",
+                    async:false 
+                }).done(function(data){
+                    $sucesso = $.parseJson(data)["sucesso"];
+                    $mensagem = $.parseJSON(data)["mensagem"];
+
+                    if($sucesso){
+                        $('#mensagem p').html($mensagem);
+                    }   else {
+                        $('#mensagem p').html($mensagem);
+                    }
+                }).fail(function(){
+                    $('#mensagem p').html("Erro no sistema, tente mais tarde");
+                }).always(function(){
+                    $('#mensagem').show();
+                });
+>>>>>>> 1bcaac77a5b9f6e15d93ecd95d52246cfdb3e4fe
             }
         </script>
     </body>

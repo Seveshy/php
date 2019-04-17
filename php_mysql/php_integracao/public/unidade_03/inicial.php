@@ -4,7 +4,7 @@
 
 $servidor = "localhost";
 $usuario = "root";
-$senha = "";
+$senha = "123456";
 $banco = "andes";
 $conecta = mysqli_connect($servidor, $usuario, $senha, $banco);
 

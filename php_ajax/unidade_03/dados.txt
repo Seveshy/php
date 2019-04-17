@@ -1,1 +1,18 @@
+<<<<<<< HEAD
 Curso PHP com AJAX/JQuery
+=======
+Curso PHP com AJAX/JQuery
+
+Principais funções do JQuery    
+
+Acessar e manipular o DOM
+Adicionar efeitos visuais e animações
+Alterar o conteúdo de uma página
+Alterar a apresentação de uma página
+Buscar informações no servidor sem recarregar a página
+
+Como usar a biblioteca JQuery
+
+Usar uma versão remota (CDN)
+Baixar a biblioteca JQuery
+>>>>>>> 1bcaac77a5b9f6e15d93ecd95d52246cfdb3e4fe

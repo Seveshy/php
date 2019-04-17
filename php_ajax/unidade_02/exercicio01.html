@@ -6,6 +6,54 @@
     </head>
 
     <body>
+<<<<<<< HEAD
         <h1></h1>
     </body>
+=======
+       
+
+        0 = requisição não inicializada
+        1 = conexão estabelecida 
+        2 = requisição recebida
+        3 = processando requisição 
+        4 = requisição finalizada
+
+        <button onclick="carregarDados()" id="botao">Botao</button>
+        <div id="dinamico">
+            <h1>Curso de PHP com AJAX</h1>
+        </div>
+
+    </body>
+    <script>
+        function carregarDdos(){
+
+        
+            var ajax;
+                if (window.XMLHttpRequest) {
+                    ajax = new XMLHttpRequest();
+                } else {
+                    ajax = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+            ajax.open('GET', 'dados.txt', 'true');
+            ajax.onreadystatechange = function() {
+                if (ajax.status == 200) {
+                if (ajax.readyState == 3) {
+                    console.log("Carregando");
+                }
+
+                if (ajax.readyState == 4) {
+                    var elemento = document.getElementById('dinamico');
+                    elemento.innerHTML = ajax.responseText;
+
+                    var titulo = document.getElementsByName('h1');
+                    titulo[0].innerHTML = ajax.responseText;
+                    }
+                }   else {
+                    console.log("Erro na operacao");
+                }
+            }
+            ajax.send();
+        }
+        </script>
+>>>>>>> 1bcaac77a5b9f6e15d93ecd95d52246cfdb3e4fe
 </html>

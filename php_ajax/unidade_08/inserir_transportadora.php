@@ -1,5 +1,9 @@
   <?php
+<<<<<<< HEAD
     $conecta = mysqli_connect("localhost","root","123","andes");
+=======
+    $conecta = mysqli_connect("localhost","root","","andes");
+>>>>>>> 1bcaac77a5b9f6e15d93ecd95d52246cfdb3e4fe
     if ( mysqli_connect_errno()  ) {
         die("Conexao falhou: " . mysqli_connect_errno());
     }
@@ -13,6 +17,7 @@
         $inserir    = "INSERT INTO transportadoras ";
         $inserir    .= "(nometransportadora,endereco,cidade,estadoID) ";
         $inserir    .= "VALUES ";
+<<<<<<< HEAD
         $inserir    .= "('$nome','$endereco','$cidade', $estado)";    
         
         $operacao_insercao = mysqli_query($conecta, $inserir);
@@ -25,5 +30,8 @@
         }
 
         echo json_encode($retorno);
+=======
+        $inserir    .= "('$nome','$endereco','$cidade', $estado)";        
+>>>>>>> 1bcaac77a5b9f6e15d93ecd95d52246cfdb3e4fe
     }
 ?>

@@ -1,6 +1,10 @@
   <?php
   	// Criar conexao
+<<<<<<< HEAD
     $conecta = mysqli_connect("localhost","root","","andes");
+=======
+    $conecta = mysqli_connect("localhost","root","123456","andes");
+>>>>>>> 1bcaac77a5b9f6e15d93ecd95d52246cfdb3e4fe
     if ( mysqli_connect_errno()  ) {
         die("Conexao falhou: " . mysqli_connect_errno());
     }

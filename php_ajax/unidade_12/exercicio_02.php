@@ -42,6 +42,13 @@
         
         <script src="_js/jquery.js"></script>
         <script>
+<<<<<<< HEAD
+=======
+            $('#cep').blur(function(e) {
+                var cep=$('#cep').val();
+                console.log(cep);
+            });
+>>>>>>> 1bcaac77a5b9f6e15d93ecd95d52246cfdb3e4fe
         </script>
     </body>
 </html>
